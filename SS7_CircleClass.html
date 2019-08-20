@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Build Circle object</title>
+</head>
+<body>
+    <script>
+        let Circle = function(radius) {
+            this.radius = radius;
+            this.getRadius = function() {
+                return radius;
+            }
+            this.getArea = function() {
+                return Math.PI * radius * radius;
+            }
+
+        };
+        let circle0 = new Circle(2);
+        let circle1 = new Circle(4);
+        let circle2 = new Circle(5);
+        let circle3 = new Circle(6);
+        let circle4 = new Circle(7);
+        let radius = circle1.getRadius(); // 2
+
+        let area = circle1.getArea(); // 12.566370614359172
+        alert("radius: " + radius + "; area: " + area);
+        alert("radius: " + circle1.getRadius() + "; area: " + circle1.getArea());
+        alert("radius: " + circle2.getRadius() + "; area: " + circle2.getArea());
+        alert("radius: " + circle3.getRadius() + "; area: " + circle3.getArea());
+        alert("radius: " + circle4.getRadius() + "; area: " + circle4.getArea());
+
+
+
+    </script>
+
+</body>
+</html>
